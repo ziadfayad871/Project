@@ -771,3 +771,268 @@
         grid-template-columns: minmax(0, 1fr);
       }
     }
+
+  /*============> Begin Register Page <============ */
+
+    .register-body{
+      padding: 20px 50px;
+      direction: rtl;
+    }
+    .regiseter-container{
+      width: 480px;
+      height: 650px;
+      margin: auto;
+      background: radial-gradient(circle at top, rgba(255, 122, 74, 0.14), transparent 55%) var(--card);
+      border-radius: var(--radius-lg);
+      padding: 12px;
+      border: 1px solid var(--border-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .register-page-title h2{
+      font-size: 36px;
+      background: linear-gradient(120deg, #ffdd55, #ff4b2b, #ff7a4a);
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 18px rgba(255, 75, 43, 0.35);
+    }
+    .regiseter-container .register-form{
+      width: 320px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .regiseter-container .register-form div{
+      width: 100%;
+      height: calc(100% / 12);
+    }
+    .regiseter-container .register-form div label{
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .regiseter-container .register-form div input,
+    .regiseter-container .register-form div button{
+      margin-top: 4px;
+      width: 100%;
+      height: 32px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .regiseter-container .register-form div input{
+      font-size: 16px;
+      background-color: #eeeeee;
+      transition: 0.25s;
+    }
+    .regiseter-container .register-form div input:focus{
+      border: 0.5px solid var(--accent);
+      background-color: #fff;
+      box-shadow: 0 1px 30px rgba(255, 75, 43, 0.55);
+    }
+    .regiseter-container .register-form div button{
+      background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(255, 75, 43, 0.55);
+      border-color: rgba(255, 255, 255, 0.06);
+      cursor: pointer;
+      transition: 0.2s;
+      font-weight: 600;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .regiseter-container .register-form div button:hover{
+      transform: translateY(-1px) scale(1.02);
+      box-shadow: 0 14px 40px rgba(255, 75, 43, 0.7);
+      filter: saturate(1.1);
+    }
+    .regiseter-container .register-with{
+      margin-top: -10px;
+      background-color: #999;
+      width: 350px;
+      height: 1px;
+    }
+    .regiseter-container .register-anthor{
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .regiseter-container .register-anthor div a{
+      padding: 7px 50px;
+      border-radius: 15px;
+      font-weight: bold;
+    }
+    .regiseter-container .register-anthor .regiter-with-facebook a{
+      background-color: #1877f2;
+      
+    }
+    .regiseter-container .register-anthor .regiter-with-google a{
+      background-color: #fff;
+      color: #000;
+    }
+    .to-sign-in p{
+      font-size: 15px;
+    }
+    .to-sign-in p a{
+      color: var(--accent-dark);
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .regisetr-footer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 60px;
+    }
+    /* ===== Responsive ===== */
+
+    @media (max-width: 1400px) {
+      .regiseter-container{
+        width: 400px;
+        height: 600px;
+      }
+      .register-page-title h2{
+        font-size: 30px;
+      }
+      .regiseter-container .register-form{
+        width: 300px;
+        height: 400px;
+      }
+      .regiseter-container .register-form div label{
+        font-size: 14px;
+      }
+      .regiseter-container .register-form div input,
+      .regiseter-container .register-form div button{
+        margin-top: 3px;
+        height: 30px;
+      }
+      .regiseter-container .register-form div input{
+        font-size: 14px;
+      }
+      .regiseter-container .register-form div button{
+        font-size: 16px;
+      }
+      .regiseter-container .register-anthor div a{
+        padding: 5px 40px;
+        border-radius: 18px;
+      }
+    }
+    @media (max-width: 1280px) {
+      .register-body{
+        padding: 5px 30px;
+      }
+      .regiseter-container{
+      width: 450px;
+      height: 550px;
+      }
+      .register-page-title h2{
+        font-size: 28px;
+      }
+      .regiseter-container .register-form{
+        width: 300px;
+        height: 400px;
+      }
+      .regiseter-container .register-form div label{
+        font-size: 12px;
+      }
+      .regiseter-container .register-form div input,
+      .regiseter-container .register-form div button{
+        margin-top: 3px;
+        height: 28px;
+      }
+      .regiseter-container .register-form div input{
+        font-size: 12px;
+      }
+      .regiseter-container .register-form div button{
+        font-size: 14px;
+      }
+      .regiseter-container .register-with{
+        margin-top: -10px;
+        width: 300px;
+      }
+      .regiseter-container .register-anthor{
+        width: 300px;
+      }
+      .regiseter-container .register-anthor div a{
+        padding: 5px 20px;
+        border-radius: 15px;
+        font-size: 12px;
+      }
+      .to-sign-in p{
+        font-size: 12px;
+      }
+      .to-sign-in p a{
+        font-size: 14px;
+      }
+      .regisetr-footer p{
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 576px) {
+      .register-body{
+        padding: 5px 10px;      
+      }
+      .regiseter-container{
+        width: 300px;
+        height: 500px;
+      }
+      .register-logo{
+        margin-bottom: 10px;
+      }
+      .register-page-title h2{
+        font-size: 18px;
+      }
+      .regiseter-container .register-form div label{
+        font-size: 10px;
+      }
+      .regiseter-container .register-form{
+        width: 250px;
+        height: 320px;
+      }
+      .regiseter-container .register-form div input,
+      .regiseter-container .register-form div button{
+        margin-top: 1px;
+        height: 24px;
+        border-radius: 7px;
+      }
+      .regiseter-container .register-form div button{
+        font-size: 10px;
+        margin-top: 10px;
+      }
+      .regiseter-container .register-with{
+        margin-top: -10px;
+        width: 250px;
+      }
+      .regiseter-container .register-anthor{
+        width: 250px;
+      }
+      .regiseter-container .register-anthor div a{
+        padding: 4px 16px;
+        border-radius: 15px;
+        font-size: 12px;
+      }
+      .to-sign-in p{
+        font-size: 12px;
+      }
+      .regisetr-footer{
+        padding: 15px 30px;
+      }
+      .regisetr-footer p{
+        font-size: 10px;
+      }
+      .to-sign-in p a{
+        font-size: 11px;
+      }
+    }
+
+
+  /*============> End Register Page <============ */
